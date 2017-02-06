@@ -30,6 +30,9 @@
 				this.weather = {icon: icon, temp: Math.round(weather.main.temp), name: weather.name}
 			},
 			toggleTemp: function () {
+				if (this.weather.temp === "") {
+					return
+				}
 				if (this.tempType == "F") {
 					this.tempType = "C"
 					var temp = Math.round((this.weather.temp - 32) * 5 / 9)
