@@ -26,7 +26,7 @@
 			setWeather: function (weather) {
 				console.log(weather.main)
 				//console.log(weather);
-				var icon = `http://openweathermap.org/img/w/${ weather.weather[0].icon}.png`
+				var icon = `https://openweathermap.org/img/w/${ weather.weather[0].icon}.png`
 				this.weather = {icon: icon, temp: Math.round(weather.main.temp), name: weather.name}
 			},
 			toggleTemp: function () {
